@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frameset and Iframe Example</title>
+</head>
+
+<!-- Frameset (Deprecated in HTML5) -->
+<frameset cols="50%,50%">
+    <frame src="https://www.example.com" name="leftFrame">
+    <frame src="iframe_page.html" name="rightFrame">
+</frameset>
+
+<!-- Fallback for browsers that do not support frames -->
+<noframes>
+    <body>
+        <h2>Frames are not supported in your browser.</h2>
+        <p>Here is an embedded website using an iframe instead:</p>
+        <iframe src="https://www.wikipedia.org" width="600" height="400"></iframe>
+
+        <h2>Embedding a YouTube Video</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+    </body>
+</noframes>
+
+</html>
