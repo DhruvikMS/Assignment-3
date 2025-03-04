@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Book Details Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .subject-options {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 5px;
+        }
+        .submit-btn {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-top: 15px;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 5px;
+        }
+        .submit-btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>User Book Details</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="Enter your address" required>
+
+            <label>Book Subject:</label>
+            <div class="subject-options">
+                <input type="radio" id="fiction" name="subject" value="Fiction">
+                <label for="fiction">Fiction</label>
+                <input type="radio" id="nonfiction" name="subject" value="Non-Fiction">
+                <label for="nonfiction">Non-Fiction</label>
+                <input type="radio" id="science" name="subject" value="Science">
+                <label for="science">Science</label>
+            </div>
+
+            <label for="author">Favorite Author:</label>
+            <select id="author" name="author">
+                <option value="tolkien">J.R.R. Tolkien</option>
+                <option value="rowling">J.K. Rowling</option>
+                <option value="coelho">Paulo Coelho</option>
+                <option value="rand">Ayn Rand</option>
+            </select>
+
+            <label for="comments">Comments on Last Book Read:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Share your thoughts..."></textarea>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
